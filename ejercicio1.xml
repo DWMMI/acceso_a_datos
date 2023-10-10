@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PersonasSeries>
+    <persona>
+        <nombre>Quique</nombre>
+        <Serie_Favorita>bob esponja</Serie_Favorita>
+    </persona>
+    <persona>
+        <nombre>Fer</nombre>
+        <Serie_Favorita>doraemon</Serie_Favorita>
+    </persona>
+    <persona>
+        <nombre>Dani</nombre>
+        <Serie_Favorita>mikey mouse</Serie_Favorita>
+    </persona>
+    <persona>
+        <nombre>Edu</nombre>
+        <Serie_Favorita>barbi</Serie_Favorita>
+    </persona>
+    <persona>
+        <nombre>Dichao</nombre>
+        <Serie_Favorita>ataque de los titanes</Serie_Favorita>
+    </persona>
+    <persona>
+        <nombre>Ángel</nombre>
+        <Serie_Favorita>sense8</Serie_Favorita>
+    </persona>
+</PersonasSeries>

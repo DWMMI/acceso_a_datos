@@ -7,9 +7,8 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
-import java.lang.reflect.Array;
 
-public class Main {
+public class EscribirXML {
     public static void main(String[] args) throws ParserConfigurationException, TransformerException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -42,7 +41,7 @@ public class Main {
             elemento.appendChild(elemFinal);
             elemFinal.appendChild(text);
 
-            Element elemFinal2 = document.createElement("SerieFavorita");
+            Element elemFinal2 = document.createElement("Serie_Favorita");
             Text text2 = document.createTextNode(series[i]);
             elemento.appendChild(elemFinal2);
             elemFinal2.appendChild(text2);
