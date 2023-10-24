@@ -25,8 +25,11 @@ public class DB4O {
         for (int i = 0; i < nombre.length; i++)
             db.store(new AlumnoCFGS(nombre[i], edad[i], noGrupo[i], alturaAproxEnM[i], juegaConsola[i], horasEnLOL[i], juegosFavorito[i]));
 
+        /*
+        tanto los que tenga tu nombre como los que no jueguen en consola
+         */
         Query query = db.query();
-        query.descend("juegaConsola").constrain(true).or(query.descend("edad").constrain(21).smaller());
+        query.descend("nombre").constrain("Luis").or(query.descend("juegaConsola").constrain(false));
         ObjectSet<AlumnoCFGS>result3 = query.execute();
         while (result3.hasNext()) System.out.println(result3.next());
         db.close();
